@@ -1,0 +1,108 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:700');
+
+/* Fontawesome */
+@import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
+
+/* Utilities */
+body {
+  margin: 0;
+  font-family: Open Sans;
+}
+
+h1, h2, h3, h4 {
+  font-family: Poppins;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Custom design below! */
+
+.banner {
+color: #dce1dd;
+background-image: url("./../images/banner-image.jpg") ;
+background-size: cover;
+background-position: center;
+padding: 200px 0;
+display: flex;
+padding-left: 250px;
+padding-top: 50px;
+}
+
+.banner h1, p {
+  text-shadow: 2px 2px 2px #000;
+}
+
+.banner p {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.container-banner {
+  text-align: center;
+}
+
+.banner  a {
+  width: 50%;
+  color: #dce1dd;
+  margin: 0 auto;
+  display: block;
+  text-decoration: none;
+  background-color: #65493D;
+  padding: 12px 25px;
+  margin-top: 30px;
+  box-shadow: 0px 5px 15px #000;
+  border-radius: 6px;
+  transition: ease 0.3;
+}
+
+.banner a:hover {
+  background-color: #876152;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.card {
+  width: 200px;
+  border-radius: 3px;
+  box-shadow: 0 0 5px rgb(230,230,230);
+  padding: 20px;
+  border: 1px solid rgb(230,230,230);
+}
+
+.cards{
+ display: flex;
+ justify-content: space-around;
+ margin-bottom: 20px;
+}
+
+.cards p {
+text-shadow: none;
+}
+
+.footer {
+  background-color: #65493d;
+  text-align: center;
+  padding: 30px;
+}
+
+.links > a {
+  font-size: 30px;
+  color: #DCE1DD;
+  text-decoration: none;
+  margin: 10px;
+}
+
+.links > a:hover {
+  color: #e2bd9e;
+}
+
+.card > i.fas {
+  width:100%;
+  text-align: center;
+  font-size: 30px;
+}
