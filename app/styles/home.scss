@@ -1,25 +1,3 @@
-/* Fonts */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:700');
-
-/* Fontawesome */
-@import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
-
-/* Utilities */
-body {
-  margin: 0;
-  font-family: Open Sans;
-}
-
-h1, h2, h3, h4 {
-  font-family: Poppins;
-}
-
-a {
-  text-decoration: none;
-}
-
-/* Custom design below! */
-
 .banner {
 color: #dce1dd;
 background-image: url("./../images/banner-image.jpg") ;
@@ -33,6 +11,7 @@ padding-top: 50px;
 
 .banner h1, p {
   text-shadow: 2px 2px 2px #000;
+  text-decoration: underline;
 }
 
 .banner p {
@@ -82,23 +61,6 @@ padding-top: 50px;
 
 .cards p {
 text-shadow: none;
-}
-
-.footer {
-  background-color: #65493d;
-  text-align: center;
-  padding: 30px;
-}
-
-.links > a {
-  font-size: 30px;
-  color: #DCE1DD;
-  text-decoration: none;
-  margin: 10px;
-}
-
-.links > a:hover {
-  color: #e2bd9e;
 }
 
 .card > i.fas {

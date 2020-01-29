@@ -1,33 +1,30 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>BecomingADev</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    {{content-for "head"}}
-
-    <link integrity="" rel="stylesheet" href="{{rootURL}}assets/vendor.css">
-    <link integrity="" rel="stylesheet" href="{{rootURL}}assets/becoming-a-dev.css">
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
-    {{content-for "head-footer"}}
-  <body>
-    {{content-for "body"}}
-  <meta charset="UTF-8">
-  <title>My landing page</title>
-  <link rel="shortcut icon" href="data:image/x-icon;" type="image/x-icon">
-  <!-- We need this line below for responsiveness! -->
+<head>
+  <title>BecomingADev</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <base href="/"> -->
+  <!-- <link rel="stylesheet" type="text/css" href="{{rootURL}}assets/becoming-a-dev.css"> -->
 
+  {{content-for "head"}}
+  <link integrity="" rel="stylesheet" href="{{rootURL}}assets/vendor.css">
+  <!-- <link integrity="" rel="stylesheet" href="{{rootURL}}assets/app.css"> -->
+  <link integrity="" rel="stylesheet" href="{{rootURL}}assets/becoming-a-dev.css">
+  <link
+  href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css"
+  rel="stylesheet"  type='text/css'>
+  {{content-for "head-footer"}}
 </head>
 <body>
 
+  {{content-for "body"}}
+  <script src="{{rootURL}}assets/vendor.js"></script>
+  <script src="{{rootURL}}assets/becoming-a-dev.js"></script>
 
+
+  {{content-for "body-footer"}}
 </body>
-</html>
-
-    {{content-for "body-footer"}}
-  </body>
 </html>
