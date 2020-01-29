@@ -45,9 +45,11 @@ padding-top: 50px;
 }
 
 .card {
+  background-color: #f2f3f4;
+  color: #7A7069;
   width: 200px;
   border-radius: 3px;
-  box-shadow: 0 0 5px rgb(230,230,230);
+  // box-shadow: 0 0 5px rgb(230,230,230);
   padding: 20px;
   border: 1px solid rgb(230,230,230);
 }
