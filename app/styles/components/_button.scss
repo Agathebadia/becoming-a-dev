@@ -1,0 +1,18 @@
+.banner  .btn-contact {
+  width: 50%;
+  color: #dce1dd;
+  margin: 0 auto;
+  display: block;
+  text-decoration: none;
+  background-color: #A1CDB6;
+  text-shadow: 0px 1px 20px #000;
+  padding: 12px 25px;
+  margin-top: 30px;
+  box-shadow: 0px 5px 15px #3d4044;
+  border-radius: 6px;
+  transition: ease 0.3;
+}
+
+.banner .btn-contact:hover {
+  background-color: #afccbc;
+}
