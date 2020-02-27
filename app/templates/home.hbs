@@ -9,7 +9,10 @@
   <!-- code a "How it works" section -->
 <div class="container">
   <h2 class="text-center">HOW DOES IT WORK?</h2>
-  <div class="cards">
+
+  <div class="container-card-img">
+    <img src="assets/images/blue-purple-sky.jpg" width="500" class="align-left slide-in">
+
     <div class="card">
       <i class="fas fa-mug-hot"></i>
       <h4>Tell me about your yourself</h4>
@@ -18,14 +21,20 @@
       <p>How did you learn coding?</p>
       <p>What year did you start coding?</p>
     </div>
+  </div>
 
+  <div class="container-card-img">
     <div class="card">
       <i class="fas fa-smile-beam"></i>
       <h4>Send me your best smile!</h4>
       <p>Or your favorite avatar picture
       </p>
     </div>
+    <img src="assets/images/purple-amethyst.jpg" width="500" class="align-right slide-in">
+  </div>
 
+  <div class="container-card-img">
+    <img src="assets/images/purple-keyboard.jpg" width="500" class="align-left slide-in">
     <div class="card">
       <i class="fas fa-code"></i>
       <h4>Being a developer today</h4>
@@ -34,3 +43,42 @@
     </div>
   </div>
 </div>
+
+<script>
+  function debounce(func, wait = 20, immediate = true) {
+    var timeout;
+    return function () {
+      var context = this, args = arguments;
+      var later = function () {
+        timeout = null;
+        if (!immediate) func.apply(context, args);
+      };
+      var callNow = immediate && !timeout;
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+      if (callNow) func.apply(context, args);
+    };
+  }
+
+  const sliderImages = document.querySelectorAll('.slide-in');
+
+  function checkSlide(e) {
+    sliderImages.forEach(sliderImage => {
+      // Half way through the image
+      const slideInAt = (window.scrollY + window.innerHeight) - sliderImage.height / 2;
+      // Bottom of the image
+      const imageBottom = sliderImage.offsetTop + sliderImage.height;
+      const isHalfShown = slideInAt > sliderImage.offsetTop;
+      const isNotScrolledPast = window.scrollY < imageBottom;
+      if (isHalfShown && isNotScrolledPast) {
+        sliderImage.classList.add('active');
+      } else {
+        sliderImage.classList.remove('active');
+      }
+      // Once the image is picking, that's the point when the image should appear
+    });
+  }
+
+  window.addEventListener('scroll', debounce(checkSlide));
+
+</script>

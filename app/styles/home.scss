@@ -1,6 +1,6 @@
 .banner {
 color: #dce1dd;
-background-image: url("./../images/white-sky.jpg") ;
+background-image: url("../assets/images/white-sky.jpg") ;
 background-size: cover;
 object-fit: cover;
 background-position: center;
@@ -26,30 +26,70 @@ height: 500px;
 
 .text-center {
   text-align: center;
+  padding-top: 3em;
+  padding-bottom: 3em;
 }
 
 .card {
   background-color: #f2f3f4;
   color: #7A7069;
   width: 200px;
+  max-height: 320px;
   border-radius: 3px;
   // box-shadow: 0 0 5px rgb(230,230,230);
   padding: 20px;
   border: 1px solid rgb(230,230,230);
+  p {
+    text-shadow: none;
+  }
 }
 
-.cards{
- display: flex;
- justify-content: space-around;
- margin-bottom: 20px;
+.align-right {
+  float: right;
 }
 
-.cards p {
-text-shadow: none;
+.align-left {
+  float: left;
 }
 
 .card > i.fas {
   width:100%;
   text-align: center;
   font-size: 30px;
+}
+
+.site-wrap {
+      max-width: 700px;
+      margin: 100px auto;
+      padding: 40px;
+      // text-align: justify;
+    }
+
+.slide-in {
+      opacity: 0;
+      transition: all .5s;
+      margin-bottom: 4em;
+    }
+
+    .align-left.slide-in {
+      transform: translateX(-30%) scale(0.95);
+    }
+
+    .align-right.slide-in {
+      transform: translateX(30%) scale(0.95);
+    }
+
+    .slide-in.active {
+      opacity: 1;
+      transform: translateX(0%) scale(1);
+    }
+
+.justify-text {
+  text-align: justify;
+}
+
+.container-card-img {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4em;
 }
