@@ -1,12 +1,14 @@
 .banner {
 color: #dce1dd;
-background-image: url("./../images/banner-image.jpg") ;
+background-image: url("./../images/white-sky.jpg") ;
 background-size: cover;
+object-fit: cover;
 background-position: center;
 padding: 200px 0;
 display: flex;
-padding-left: 250px;
-padding-top: 50px;
+justify-content: center;
+padding-top: 150px;
+height: 500px;
 }
 
 .banner h1, p {
