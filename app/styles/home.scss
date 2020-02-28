@@ -47,10 +47,12 @@ height: 700px;
 
 .align-right {
   float: right;
+  margin-left: 1em;
 }
 
 .align-left {
   float: left;
+  margin-right: 1em;
 }
 
 .card > i.fas {
@@ -94,4 +96,7 @@ height: 700px;
   display: flex;
   justify-content: center;
   margin-bottom: 4em;
+   img {
+    border-radius: 3px;
+  }
 }
