@@ -35,6 +35,7 @@ height: 500px;
   color: #7A7069;
   width: 200px;
   max-height: 320px;
+  font-size: 12px;
   border-radius: 3px;
   // box-shadow: 0 0 5px rgb(230,230,230);
   padding: 20px;
@@ -68,7 +69,7 @@ height: 500px;
 .slide-in {
       opacity: 0;
       transition: all .5s;
-      margin-bottom: 4em;
+      // margin-bottom: 4em;
     }
 
     .align-left.slide-in {
@@ -89,6 +90,7 @@ height: 500px;
 }
 
 .container-card-img {
+  max-height: 320px;
   display: flex;
   justify-content: center;
   margin-bottom: 4em;
