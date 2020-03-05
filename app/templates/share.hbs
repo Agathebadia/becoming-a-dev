@@ -1,0 +1,19 @@
+<form>
+  <label>Label</label>
+  <input placeholder="My input">
+  <button>Save</button>
+</form>
+
+{{#ui-form as |form|}}
+
+  {{#form.label}}
+    My label
+  {{/form.label}}
+
+  {{form.input placeholder="my input"}}
+
+  {{#form.submit}}
+    Save
+  {{/form.submit}}
+
+{{/ui-form}}
